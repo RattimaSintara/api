@@ -1,0 +1,19 @@
+[project]
+name = "citation-extraction-mcp"
+version = "0.1.0"
+description = "FastMCP citation extraction and reference verification service"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "langextract>=1.0.0",
+    "openai>=1.0.0",
+    "pandas>=3.0.3",
+    "pythainlp>=5.0.0",
+    "rapidfuzz>=3.0.0",
+    "requests>=2.0.0",
+    "semanticscholar>=0.10.0",
+]
+
+[project.scripts]
+citation-extraction-mcp = "main:main"
